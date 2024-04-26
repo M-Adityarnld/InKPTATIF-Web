@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleUser, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 
+
+
 const InputKP = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [activeButton, setActiveButton] = useState('dibimbing'); 
@@ -70,7 +72,7 @@ const InputKP = () => {
             </div>
             <div className="mhs-button">
               <button style={{ margin: '0 30px 0 70px', backgroundColor: '#00BD13' }}>Sudah</button>
-             <Link to='/DetailKP'>
+             <Link state={{mahasiswa}} to='/DetailKP'>
              <button style={{ backgroundColor: '#023047' }}>Detail</button>
              </Link>
 

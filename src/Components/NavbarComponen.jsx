@@ -21,7 +21,7 @@ const NavbarComponent = () => {
   
   return (
     <div>
-      <Navbar expand="lg" className="bg">
+      <Navbar expand="lg" className="bg" style={{zIndex:'999999999999999999999999999'}}>
         <Container>
           <Navbar.Brand as={Link} style={{fontSize:'30px'}} to="/HomePage">
             <span style={{color:'#F1FAEE', fontWeight:'bold'}}>InKPTA</span>

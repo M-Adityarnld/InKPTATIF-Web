@@ -54,11 +54,13 @@ export const datamhs =[
     id: 1,
     nama:"Ahmad Kurniawan",
     NIM: '12250110123',
+    pembimbing1:'Bu Fulanah',
+    pembimbing2:'Pak Fulan',
     Keterangan:'sudah',   
     judul:'Perancangan Rancangan yang Akan Dirancangkan, Dengan Menggunakan Metode Perancangan Terbaru     dan yang paling sesuai',
-    hari:'Kamis,18 April 2024',
-    jam:'10.30 - 12.00',
-    tempat:'FST-305',
+    hari:' Hari: Kamis,18 April 2024',
+    jam:'Jam/Tempat: 10.30 - 12.00',
+    tempat:'/FST-305',
     judul2:'Perancangan Rancangan yang Akan Dirancangkan'
     
 },
@@ -69,11 +71,13 @@ export const datamhs =[
 
   nama:"Aufa Hajati",
   NIM: '12250110124',
+  pembimbing1:'Bu Fitri Insani',
+    pembimbing2:'Pak Jasril',
   Keterangan:'sudah',   
   judul:'Perancangan Rancangan yang Akan Dirancangkan, Dengan Menggunakan Metode Perancangan Terbaru     dan yang paling sesuai 02',
-  hari:'Kamis,18 April 2024',
-  jam:'13.30 - 15.00',
-  tempat:'FST-305',
+  hari:'Hari: Kamis,18 April 2024',
+  jam:'Jam/Tempat: 13.30 - 15.00',
+  tempat:'/FST-305',
   judul2:'Perancangan Rancangan yang Akan Dirancangkan'
     
 },
@@ -82,13 +86,15 @@ export const datamhs =[
 
   id: 3,
  
-  nama:"Muhammad Dimas",
-  NIM: '12250110125',
+  nama:"Muhammad Aditya",
+  NIM: '12250111048',
+  pembimbing1:'Bu Iis Afriyanti',
+    pembimbing2:'Pak Affandes',
   Keterangan:'sudah',   
   judul:'Perancangan Rancangan yang Akan Dirancangkan, Dengan Menggunakan Metode Perancangan Terbaru     dan yang paling sesuai 03',
-  hari:'Kamis,18 April 2024',
-  jam:'15.00 - 17.00',
-  tempat:'FST-305',
+  hari:'Hari: Kamis,18 April 2024',
+  jam:'Jam/Tempat: 15.00 - 17.00',
+  tempat:'/FST-305',
   judul2:'Perancangan Rancangan yang Akan Dirancangkan'
     
 },
@@ -99,11 +105,13 @@ export const datamhs =[
  
   nama:"surya Hidayatullah",
   NIM: '12250110126',
+  pembimbing1:'Bu Elin Hairani',
+    pembimbing2:'Pak Pizaini',
   Keterangan:'sudah',   
   judul:'Perancangan Rancangan yang Akan Dirancangkan, Dengan Menggunakan Metode Perancangan Terbaru     dan yang paling sesuai 04',
   hari:'Kamis,25 April 2024',
   jam:'10.30 - 12.00',
-  tempat:'FST-305',
+  tempat:'/FST-305',
   judul2:'Perancangan Rancangan yang Akan Dirancangkan'
 },
 
@@ -115,10 +123,12 @@ export const datamhs =[
   nama:"Farras Lathief",
   NIM: '12250110126',
   Keterangan:'sudah',
+  pembimbing1:'Bu Yelvi Fitriani',
+    pembimbing2:'Pak Febiyanto',
   judul:'Perancangan Rancangan yang Akan Dirancangkan, Dengan Menggunakan Metode Perancangan Terbaru     dan yang paling sesuai 05',
   hari:'Kamis,25 April 2024',
   jam:'13.30 - 15.00',
-  tempat:'FST-305',
+  tempat:'/FST-305',
   judul2:'Perancangan Rancangan yang Akan Dirancangkan'
   
 },
@@ -129,11 +139,13 @@ export const datamhs =[
  
   nama:"Muhammad Azmi",
   NIM: '12250110126',
+  pembimbing1:'Bu Fulanah',
+  pembimbing2:'Pak Fulan',
   Keterangan:'sudah',   
   judul:'Perancangan Rancangan yang Akan Dirancangkan, Dengan Menggunakan Metode Perancangan Terbaru     dan yang paling sesuai 06',
-  hari:'Kamis,25 April 2024',
-  jam:'15.300 - 17.00',
-  tempat:'FST-305',
+  hari:'Hari: Kamis,25 April 2024',
+  jam:'Jam/Tempat: 15.300 - 17.00',
+  tempat:'/FST-305',
   judul2:'Perancangan Rancangan yang Akan Dirancangkan'
 },
 
@@ -143,11 +155,13 @@ export const datamhs =[
   
   nama:"Muhammad Rafly",
   NIM: '12250110126',
+  pembimbing1:'Bu Fitri Insani',
+  pembimbing2:'Pak Jasril',
   Keterangan:'sudah',   
   judul:'Perancangan Rancangan yang Akan Dirancangkan, Dengan Menggunakan Metode Perancangan Terbaru     dan yang paling sesuai 07',
-  hari:'Kamis,02 Mei 2024',
-  jam:'10.30 - 12.00',
-  tempat:'FST-305',
+  hari:'Hari: Kamis,02 Mei 2024',
+  jam:'Jam/Tempat: 10.30 - 12.00',
+  tempat:'/FST-305',
   judul2:'Perancangan Rancangan yang Akan Dirancangkan'
 },
 
@@ -157,11 +171,13 @@ export const datamhs =[
  
   nama:"Muhammad Zaki",
   NIM: '12250110126',
+  pembimbing1:'Bu Iis Afriyanti',
+  pembimbing2:'Pak Affandes',
   Keterangan:'sudah',   
   judul:'Perancangan Rancangan yang Akan Dirancangkan, Dengan Menggunakan Metode Perancangan Terbaru     dan yang paling sesuai 08',
-  hari:'Kamis,02 Mei 2024',
-  jam:'13.30 - 15.00',
-  tempat:'FST-305',
+  hari:'Hari: Kamis,02 Mei 2024',
+  jam:'Jam/Tempat: 13.30 - 15.00',
+  tempat:'/FST-305',
   judul2:'Perancangan Rancangan yang Akan Dirancangkan'
 },
 
@@ -171,11 +187,13 @@ export const datamhs =[
  
   nama:"Hafidz Alhadid",
   NIM: '12250110126',
+  pembimbing1:'Bu Elin Hairani',
+    pembimbing2:'Pak Pizaini',
   Keterangan:'sudah', 
   judul:'Perancangan Rancangan yang Akan Dirancangkan, Dengan Menggunakan Metode Perancangan Terbaru     dan yang paling sesuai 09',
-  hari:'Kamis,02 Mei 2024',
-  jam:'15.00 - 17.00',
-  tempat:'FST-305',
+  hari:'Hari: Kamis,02 Mei 2024',
+  jam:'Jam/Tempat: 15.00 - 17.00',
+  tempat:'/FST-305',
   judul2:'Perancangan Rancangan yang Akan Dirancangkan'
 },
 
@@ -185,11 +203,13 @@ export const datamhs =[
 
   nama:"Gilang Ramadhan",
   NIM: '12250110126',
+  pembimbing1:'Bu Yelvi Fitriani',
+    pembimbing2:'Pak Febiyanto',
   Keterangan:'sudah',   
   judul:'Perancangan Rancangan yang Akan Dirancangkan, Dengan Menggunakan Metode Perancangan Terbaru     dan yang paling sesuai 10',
-  hari:'Kamis,16 Mei 2024',
-  jam:'10.30 - 12.00',
-  tempat:'FST-305',
+  hari:'Hari: Kamis,16 Mei 2024',
+  jam:'Jam/Tempat: 10.30 - 12.00',
+  tempat:'/FST-305',
   judul2:'Perancangan Rancangan yang Akan Dirancangkan'
 },
 
@@ -199,11 +219,13 @@ export const datamhs =[
 
   nama:"Diki Afdol",
   NIM: '12250110126',
+  pembimbing1:'Bu Fulanah',
+  pembimbing2:'Pak Fulan',
   Keterangan:'sudah',   
   judul:'Perancangan Rancangan yang Akan Dirancangkan, Dengan Menggunakan Metode Perancangan Terbaru     dan yang paling sesuai 11',
-  hari:'Kamis,16 Mei 2024',
-  jam:'13.30 - 15.00',
-  tempat:'FST-305',
+  hari:'Hari: Kamis,16 Mei 2024',
+  jam:'Jam/Tempat: 13.30 - 15.00',
+  tempat:'/FST-305',
   judul2:'Perancangan Rancangan yang Akan Dirancangkan'
 },
 
@@ -213,11 +235,13 @@ export const datamhs =[
 
   nama:"Haritsah Naufaldy",
   NIM: '12250110126',
+  pembimbing1:'Bu Fitri Insani',
+  pembimbing2:'Pak Febiyanto',
   Keterangan:'sudah',   
   judul:'Perancangan Rancangan yang Akan Dirancangkan, Dengan Menggunakan Metode Perancangan Terbaru     dan yang paling sesuai 12',
-  hari:'Kamis,16 Mei 2024',
-  jam:'15.00 - 17.00',
-  tempat:'FST-305',
+  hari:'Hari: Kamis,16 Mei 2024',
+  jam:'Jam/Tempat: 15.00 - 17.00',
+  tempat:'/FST-305',
   judul2:'Perancangan Rancangan yang Akan Dirancangkan'
 },
 
@@ -232,11 +256,13 @@ export const datamp =[
   
     nama:"Ferdi Hasan",
     NIM: '12250110123',
+    pembimbing1:'Bu Fitri Insani',
+  pembimbing2:'Pak Febiyanto',
     Keterangan:'sudah',
     judul:'Perancangan Rancangan yang Akan Dirancangkan, Dengan Menggunakan Metode Perancangan Terbaru     dan yang paling sesuai',
-    hari:'Kamis,18 April 2024',
-    jam:'10.30 - 12.00',
-    tempat:'FST-305',
+    hari:'Hari: Kamis,18 April 2024',
+    jam:'Jam/Tempat: 10.30 - 12.00',
+    tempat:'/FST-305',
     judul2:'Perancangan Rancangan yang Akan Dirancangkan'
 },
 
@@ -246,11 +272,13 @@ export const datamp =[
 
   nama:"Dzaky Aprima",
   NIM: '12250110124',
+  pembimbing1:'Bu Iis Afriyanti',
+  pembimbing2:'Pak Jasril',
   Keterangan:'sudah',
   judul:'Perancangan Rancangan yang Akan Dirancangkan, Dengan Menggunakan Metode Perancangan Terbaru     dan yang paling sesuai',
-  hari:'Kamis,18 April 2024',
-  jam:'13.30 - 15.00',
-  tempat:'FST-305',
+  hari:'Hari: Kamis,18 April 2024',
+  jam:'Jam/Tempat: 13.30 - 15.00',
+  tempat:'/FST-305',
   judul2:'Perancangan Rancangan yang Akan Dirancangkan' 
 },
 
@@ -260,11 +288,13 @@ export const datamp =[
  
   nama:"Reyhan Dzikra",
   NIM: '12250110125',
+  pembimbing1:'Bu Elin Hairani',
+  pembimbing2:'Pak Affandes',
   Keterangan:'sudah',
   judul:'Perancangan Rancangan yang Akan Dirancangkan, Dengan Menggunakan Metode Perancangan Terbaru     dan yang paling sesuai',
   hari:'Kamis,18 April 2024',
   jam:'15.00 - 17.00',
-  tempat:'FST-305',
+  tempat:'/FST-305',
   judul2:'Perancangan Rancangan yang Akan Dirancangkan'  
 
 },
@@ -275,11 +305,13 @@ export const datamp =[
 
   nama:"Fayat Hidayatullah",
   NIM: '12250110126',
+  pembimbing1:'Bu Fulanah',
+  pembimbing2:'Pak Fulan',
   Keterangan:'sudah',
   judul:'Perancangan Rancangan yang Akan Dirancangkan, Dengan Menggunakan Metode Perancangan Terbaru     dan yang paling sesuai',
-  hari:'Kamis,25 April 2024',
-  jam:'10.30 - 12.00',
-  tempat:'FST-305',
+  hari:'Hari: Kamis,25 April 2024',
+  jam:'Jam/Tempat: 10.30 - 12.00',
+  tempat:'/FST-305',
   judul2:'Perancangan Rancangan yang Akan Dirancangkan'   
 },
 
@@ -290,11 +322,13 @@ export const datamp =[
 
   nama:"Tri Suaka",
   NIM: '12250110126',
+  pembimbing1:'Bu Fitri Insani',
+  pembimbing2:'Pak Febiyanto',
   Keterangan:'sudah',
   judul:'Perancangan Rancangan yang Akan Dirancangkan, Dengan Menggunakan Metode Perancangan Terbaru     dan yang paling sesuai',
-  hari:'Kamis,25 April 2024',
-  jam:'13.30 - 17.00',
-  tempat:'FST-305',
+  hari:'Hari: Kamis,25 April 2024',
+  jam:'Jam/Tempat: 13.30 - 17.00',
+  tempat:'/FST-305',
   judul2:'Perancangan Rancangan yang Akan Dirancangkan'  
 },
 
@@ -304,11 +338,13 @@ export const datamp =[
 
   nama:"Mulky Maarif",
   NIM: '12250110126',
+  pembimbing1:'Bu Yelvi Fitriani',
+  pembimbing2:'Pak Pizaini',
   Keterangan:'sudah',
   judul:'Perancangan Rancangan yang Akan Dirancangkan, Dengan Menggunakan Metode Perancangan Terbaru     dan yang paling sesuai',
-  hari:'Kamis,25 April 2024',
-  jam:'15.00 - 17.00',
-  tempat:'FST-305',
+  hari:'Hari: Kamis,25 April 2024',
+  jam:'Jam/Tempat: 15.00 - 17.00',
+  tempat:'/FST-305',
   judul2:'Perancangan Rancangan yang Akan Dirancangkan'   
 },
 
@@ -319,10 +355,12 @@ export const datamp =[
   nama:"Muhammad Rafly",
   NIM: '12250110126',
   Keterangan:'sudah',
+  pembimbing1:'Bu Fitri Insani',
+  pembimbing2:'Pak Febiyanto',
   judul:'Perancangan Rancangan yang Akan Dirancangkan, Dengan Menggunakan Metode Perancangan Terbaru     dan yang paling sesuai',
-  hari:'Kamis,02 Mei 2024',
-  jam:'10.30 - 12.00',
-  tempat:'FST-305',
+  hari:'Hari :Kamis,02 Mei 2024',
+  jam:'Jam/Tempat: 10.30 - 12.00',
+  tempat:'/FST-305',
   judul2:'Perancangan Rancangan yang Akan Dirancangkan'  
 },
 
@@ -332,11 +370,13 @@ export const datamp =[
  
   nama:"Muhammad Zaki",
   NIM: '12250110126',
+  pembimbing1:'Bu Fulanah',
+  pembimbing2:'Pak Fulan',
   Keterangan:'sudah',
   judul:'Perancangan Rancangan yang Akan Dirancangkan, Dengan Menggunakan Metode Perancangan Terbaru     dan yang paling sesuai',
-  hari:'Kamis,02 Mei 2024',
-  jam:'13.30 - 17.00',
-  tempat:'FST-305',
+  hari:'Hari: Kamis,02 Mei 2024',
+  jam:'Jam/Tempat: 13.30 - 17.00',
+  tempat:'/FST-305',
   judul2:'Perancangan Rancangan yang Akan Dirancangkan'
 },
 
@@ -346,11 +386,13 @@ export const datamp =[
   
   nama:"Hafidz Alhadid",
   NIM: '12250110126',
+  pembimbing1:'Bu Iis Fitriani',
+  pembimbing2:'Pak Affandes',
   Keterangan:'sudah',
   judul:'Perancangan Rancangan yang Akan Dirancangkan, Dengan Menggunakan Metode Perancangan Terbaru     dan yang paling sesuai',
-  hari:'Kamis,02 Mei 2024',
-  jam:'15.00 - 17.00',
-  tempat:'FST-305',
+  hari:'Hari: Kamis,02 Mei 2024',
+  jam:'Jam/Tempat: 15.00 - 17.00',
+  tempat:'/FST-305',
   judul2:'Perancangan Rancangan yang Akan Dirancangkan'   
 },
 
@@ -360,11 +402,13 @@ export const datamp =[
 
   nama:"Gilang Ramadhan",
   NIM: '12250110126',
+  pembimbing1:'Bu Yelvi Fitriani',
+  pembimbing2:'Pak Affandes',
   Keterangan:'sudah',
   judul:'Perancangan Rancangan yang Akan Dirancangkan, Dengan Menggunakan Metode Perancangan Terbaru     dan yang paling sesuai',
-  hari:'Kamis,16 Mei 2024',
-  jam:'10.30 - 12.00',
-  tempat:'FST-305',
+  hari:'Hari: Kamis,16 Mei 2024',
+  jam:'Jam/Tempat: 10.30 - 12.00',
+  tempat:'/FST-305',
   judul2:'Perancangan Rancangan yang Akan Dirancangkan'  
 },
 
@@ -372,13 +416,15 @@ export const datamp =[
 
   id: 22,
  
-  nama:"Diki Afdol",
+  nama:"Daffa Ikhwan Nurfauzan",
   NIM: '12250110126',
+  pembimbing1:'Bu Siti Ramadani',
+  pembimbing2:'Pak Iwan Iskandar',
   Keterangan:'sudah',
   judul:'Perancangan Rancangan yang Akan Dirancangkan, Dengan Menggunakan Metode Perancangan Terbaru     dan yang paling sesuai',
-  hari:'Kamis,16 Mei 2024',
-  jam:'13.30 - 15.00',
-  tempat:'FST-305',
+  hari:'Hari: Kamis,16 Mei 2024',
+  jam:'Hari/Tempat: 13.30 - 15.00',
+  tempat:'/FST-305',
   judul2:'Perancangan Rancangan yang Akan Dirancangkan'  
 },
 
@@ -388,11 +434,15 @@ export const datamp =[
 
   nama:"Haritsah Naufaldy",
   NIM: '12250110126',
+  pembimbing1:'Bu Fulanah',
+  pembimbing2:'Pak Fulan',
+  pembimbing1:'Bu Fitri Insani',
+  pembimbing2:'Pak Febiyanto',
   Keterangan:'sudah',
   judul:'Perancangan Rancangan yang Akan Dirancangkan, Dengan Menggunakan Metode Perancangan Terbaru     dan yang paling sesuai',
-  hari:'Kamis,16 Mei 2024',
-  jam:'15.00 - 17.00',
-  tempat:'FST-305',
+  hari:'Hari: Kamis,16 Mei 2024',
+  jam:'Jam/Tempat: 15.00 - 17.00',
+  tempat:'/FST-305',
   judul2:'Perancangan Rancangan yang Akan Dirancangkan'  
 },
 
@@ -405,11 +455,13 @@ export const data2 =[
     id: 123,
     nama:"Ahmad Kurniawan",
     NIM: '12250110123', 
+    pembimbing1:'Bu Fitri Insani',
+  pembimbing2:'Pak Febiyanto',
     Status : 'Mahasiswa Bimbingan',  
     judul:'Perancangan Rancangan yang Akan Dirancangkan, Dengan Menggunakan  Metode Perancangan Terbaru     dan yang paling sesuai',
-    hari:'Kamis,18 April 2024',
-    jam:'10.30 - 12.00',
-    tempat:'FST-305',
+    hari:'Hari: Kamis,18 April 2024',
+    jam:'Hari/Tempat: 10.30 - 12.00',
+    tempat:'/FST-305',
      
 },
 

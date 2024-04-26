@@ -69,7 +69,7 @@ const InputTA = () => {
             </div>
             <div className="mhs-button">
               <button style={{ margin: '0 30px 0 70px', backgroundColor: '#00BD13' }}>Sudah</button>
-              <Link to='/DetailTA'>
+              <Link to='/DetailTA' state={{ mahasiswa}} >
               <button style={{ backgroundColor: '#023047' }}>Detail</button>
               </Link>
             </div>

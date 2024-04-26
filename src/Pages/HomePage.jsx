@@ -24,16 +24,16 @@ const HomePage = () => {
           </Col>
           
       <Row>
-        <h2 classname="h2-home" style={{marginTop:'100px', borderBottom:'2px solid black',width:'480px'}}>History Penilain KP, Bu Fulanah</h2>
+        <h2 className="h2-home" style={{marginTop:'100px', borderBottom:'2px solid black',width:'480px'}}>History Penilain KP, Bu Fulanah</h2>
         <div className='card-home'style={{display:'flex', flexWrap:'wrap', position:'relative'}}>
           {datamhs.map(mahasiswa => (
             <Col key={mahasiswa.id}>
-              <Card style={{ width: '15rem', margin: '20px 0' ,height:'300px', borderColor:'#219EBC'}}>
-                <Card.Body  >
+              <Card style={{ width: '15rem', margin: '20px ' ,height:'250px', borderColor:'#219EBC'}}>
+                <Card.Body style={{padding:'0px'}} >
                   <Card.Title style={{fontSize:'15px', color:'#219EBC'}}>{mahasiswa.NIM} </Card.Title>
-                  <Card.Title style={{height:'150px', fontSize:'15px'}}>{mahasiswa.nama}</Card.Title>
+                  <Card.Title style={{height:'100px', fontSize:'15px'}}>{mahasiswa.nama}</Card.Title>
                   <Card.Text >
-                    <div style={{ backgroundColor: '#023047', color: 'white' ,width:'100%'}}>
+                    <div style={{ backgroundColor: '#023047', color: 'white', marginTop:'30px'}}>
                       <p style={{fontSize:'15px'}}>{mahasiswa.judul2}</p>
                      <div className='waktu-card'>
                       <p>{mahasiswa.hari}</p>
@@ -55,13 +55,13 @@ const HomePage = () => {
         <h2 classname="h2-home" style={{marginTop:'100px', borderBottom:'2px solid black',width:'480px'}}>History Penilain TA, Bu Fulanah</h2>
         <div className='card-home'style={{display:'flex', flexWrap:'wrap', position:'relative'}}>
           {datamp.map(mahasiswa => (
-            <Col key={mahasiswa.id}>
-              <Card style={{ width: '15rem', margin: '20px 0' ,height:'300px', borderColor:'#219EBC'}}>
-                <Card.Body  >
+            <Col key={mahasiswa.id} >
+              <Card style={{ width: '15rem', margin: '20px' ,height:'250px', borderColor:'#219EBC'}}>
+                <Card.Body style={{padding:'0px'}} >
                   <Card.Title style={{fontSize:'15px', color:'#219EBC'}}>{mahasiswa.NIM} </Card.Title>
-                  <Card.Title style={{height:'150px', fontSize:'15px'}}>{mahasiswa.nama}</Card.Title>
+                  <Card.Title style={{height:'100px', fontSize:'15px'}}>{mahasiswa.nama}</Card.Title>
                   <Card.Text >
-                    <div style={{ backgroundColor: '#023047', color: 'white' ,width:'100%'}}>
+                    <div style={{ backgroundColor: '#023047', color: 'white' , marginTop:'30px'}}>
                       <p style={{fontSize:'15px'}}>{mahasiswa.judul2}</p>
                      <div className='waktu-card'>
                       <p>{mahasiswa.hari}</p>

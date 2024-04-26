@@ -1,113 +1,87 @@
-import React, { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircleArrowLeft, faCircleUser } from '@fortawesome/free-solid-svg-icons';
-import { datamhs, datamp } from '../Data/index';
+import { faCircleUser } from '@fortawesome/free-solid-svg-icons';
+import { useLocation } from 'react-router-dom';
 
 const DetailTA = () => {
-  const location = useLocation();
-  const [studentData, setStudentData] = useState(null);
-  const [activeTab, setActiveTab] = useState('bimbingan');
+  const { state } = useLocation();
+  const [activeButton, setActiveButton] = useState('bimbingan'); 
 
-  useEffect(() => {
-    if (location && location.state && location.state.id) {
-      const { id, dataType } = location.state;
-      let student = null;
-      if (dataType === 'dibimbing') {
-        student = datamhs.find((s) => s.id === id);
-      } else if (dataType === 'diuji') {
-        student = datamp.find((s) => s.id === id);
-      }
-      setStudentData(student);
-    } else {
-      setStudentData(null);
-    }
-  }, [location.state]);
+  
+  const handleDibimbingClick = () => {
+    setActiveButton('bimbingan');
+  };
 
-  useEffect(() => {
-    // Lakukan sesuatu setiap kali activeTab berubah
-  }, [activeTab]);
-
-  const handleClickTab = (tab) => {
-    setActiveTab(tab);
+  
+  const handleDiujiClick = () => {
+    setActiveButton('seminar');
   };
 
   return (
-    <div style={{ padding: '100px', display: 'flex' }}>
-      <div className="icon-detail">
-        <FontAwesomeIcon icon={faCircleArrowLeft} />
-      </div>
-      <div className="detail-container">
-        <div className="data-detail">
-          <h2>Informasi Mahasiswa</h2>
-          {studentData ? (
-            <>
-              <div className="mhs-icon">
-                <FontAwesomeIcon
-                  icon={faCircleUser}
-                  style={{ height: '40px', width: '40px', marginTop: '10px' }}
-                />
-                <div className="mhs-self">
-                  <h3 style={{ color: '#023047', fontSize: '20px' }}>
-                    {studentData.nama}
-                  </h3>
-                  <p style={{ color: '#219EBC', fontSize: '15px' }}>
-                    {studentData.NIM}
-                  </p>
-                </div>
-              </div>
-              <p>Keterangan: {studentData.Keterangan}</p>
-              <p>Judul TA: {studentData.judul}</p>
-              <p>Hari: {studentData.hari}</p>
-              <p>Jam: {studentData.jam}</p>
-              <p>Tempat: {studentData.tempat}</p>
-            </>
-          ) : (
-            <p>Loading...</p>
-          )}
-          <div className="tab">
-            <button
-              className={activeTab === 'bimbingan' ? 'active' : ''}
-              onClick={() => handleClickTab('bimbingan')}
-            >
-              Nilai Bimbingan
-            </button>
-            <button
-              className={activeTab === 'seminar' ? 'active' : ''}
-              onClick={() => handleClickTab('seminar')}
-            >
-              Nilai Seminar
-            </button>
+    <>
+      <div style={{ padding: '170px', marginLeft: '300px', width: '100%',height:'100%' }}>
+        <div className='data-detail-mhs'>
+          <div style={{ display: 'flex', alignItems: 'center', margin: '30px 0 0 30px' }}>
+            <FontAwesomeIcon icon={faCircleUser} style={{ margin: '10px 15px 0 0', width: '50px', height: '50px' }} />
+            <div style={{ marginLeft: '10px' }}>
+              <div style={{ fontSize: '35px', color: '#023047', fontWeight: '500' }}>{state.mahasiswa.nama}</div>
+              <div style={{ color: '#219EBC', fontSize: '20px', fontWeight: '500' }}>{state.mahasiswa.NIM}</div>
+            </div>
           </div>
-          <div className="kolom-penilaian">
-            {activeTab === 'bimbingan' ? (
-              <div>
-                <h3>Penilaian Bimbingan</h3>
-                <input type="number" placeholder="Usaha" />
-                <input type="number" placeholder="Kreativitas" />
-                <input type="number" placeholder="Tanggung Jawab" />
-                <input type="number" placeholder="Komunikasi" />
-                <input type="number" placeholder="Jujur" />
-              </div>
-            ) : (
-              <div>
-                <h3>Penilaian Seminar</h3>
-                <input type="number" placeholder="Motivasi" />
-                <input type="number" placeholder="Keuletan" />
-                <input type="number" placeholder="Kreativitas" />
-                <input type="number" placeholder="Tepat Waktu" />
-                <input type="number" placeholder="Tanggung Jawab" />
-              </div>
-            )}
+
+          <div className='dosen-pem' style={{ margin: '30px 0 0 30px', fontWeight: '600' }}>
+            <div>Pembimbing I</div>
+            <div>{state.mahasiswa.pembimbing1}</div>
           </div>
-          <div className="button-container">
-            <button className="simpan">Simpan</button>
-            <button className="edit">Edit</button>
+
+          <div className='dosen-pem' style={{ margin: '30px 0 0 30px', fontWeight: '600' }}>
+            <div>Pembimbing 2</div>
+            <div>{state.mahasiswa.pembimbing2}</div>
           </div>
+
+          <div className='judul-detail' style={{ margin: '30px 0 0 30px', fontWeight: '600', fontSize: '20px' }}>
+            <text style={{ color: '#219EBC' }}>Judul Seminar</text>
+            <div>{state.mahasiswa.judul}</div>
+          </div>
+
+          <div className='hari-detail' style={{ margin: '30px 0 0 30px', fontWeight: '600', fontSize: '20px' }}>
+            <text style={{ color: '#219EBC' }}>Pada</text>
+            <div>{state.mahasiswa.hari}</div>
+          </div>
+
+          <div className='hari-detail' style={{ marginLeft: '30px', display: 'flex', fontSize: '20px', fontWeight: '600' }}>
+            <div>{state.mahasiswa.jam}</div>
+            <div>{state.mahasiswa.tempat}</div>
+          </div>
+
+          <div style={{ margin: '70px 0 0 100px' }}>
+            <div className="mhs-action2">
+              <button
+                className="mhs-select"
+                onClick={handleDibimbingClick}
+                style={{ borderBottom: activeButton === 'bimbingan' ? '4px solid #023047' : '4px solid #219EBC' }}>Nilai Bimbingan</button>
+              <button
+                className="mhs-select"
+                onClick={handleDiujiClick}
+                style={{ borderBottom: activeButton === 'seminar' ? '4px solid #023047' : '4px solid #219EBC' }}>Nilai Seminar</button>
+            </div>
+          </div>
+
+     
+          <div className='nilai-input-TA' style={{ display: 'flex', margin: '30px 0 0 0', justifyContent: 'center' }}>
+            Tanggung Jawab
+            <input style={{ backgroundColor: '#219EBC', marginLeft: '200px' ,width:'50px',color:'#ffff',textAlign:'center'}} placeholder="" />
+          </div>
+
+          
+
+          
+
+          
         </div>
       </div>
-    </div>
+    </>
   );
-};
+}
 
 export default DetailTA;

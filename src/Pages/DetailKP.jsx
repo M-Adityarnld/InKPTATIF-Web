@@ -1,108 +1,89 @@
 import React, { useState } from 'react';
-import {data2} from '../Data/index'
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircleUser } from '@fortawesome/free-solid-svg-icons';
+import {useLocation}  from 'react-router-dom'
 
 const DetailKP = () => {
-  const [selectedOption, setSelectedOption] = useState(null);
-  const [nilai, setNilai] = useState({
-    usaha: '',
-    kreatifitas: '',
-    tanggungJawab: '',
-    komunikasi: '',
-    motivasi: '',
-    semangat: '',
-    kreativ: '',
-    tepatWaktu: '',
-    tanggungJawabSeminar: ''
-  });
+  const { state } = useLocation();
+  const [activeButton, setActiveButton] = useState('bimbingan'); 
 
-  const handleOptionClick = (option) => {
-    setSelectedOption(option);
+  
+  const handleDibimbingClick = () => {
+    setActiveButton('bimbingan');
   };
 
-  const handleChangeNilai = (e) => {
-    const { name, value } = e.target;
-    setNilai(prevState => ({
-      ...prevState,
-      [name]: value
-    }));
-  };
-
-  const renderNilaiForm = () => {
-    if (selectedOption === 'bimbingan') {
-      return (
-        <div>
-          <h2>Nilai Bimbingan</h2>
-          <form>
-            <label htmlFor="usaha">Usaha:</label>
-            <input type="text" id="usaha" name="usaha" value={nilai.usaha} onChange={handleChangeNilai} /><br />
-
-            <label htmlFor="kreatifitas">Kreatifitas:</label>
-            <input type="text" id="kreatifitas" name="kreatifitas" value={nilai.kreatifitas} onChange={handleChangeNilai} /><br />
-
-            <label htmlFor="tanggungJawab">Tanggung Jawab:</label>
-            <input type="text" id="tanggungJawab" name="tanggungJawab" value={nilai.tanggungJawab} onChange={handleChangeNilai} /><br />
-
-            <label htmlFor="komunikasi">Komunikasi:</label>
-            <input type="text" id="komunikasi" name="komunikasi" value={nilai.komunikasi} onChange={handleChangeNilai} /><br />
-          </form>
-        </div>
-      );
-    } else if (selectedOption === 'seminar') {
-      return (
-        <div>
-          <h2>Nilai Seminar</h2>
-          <form>
-            <label htmlFor="motivasi">Motivasi:</label>
-            <input type="text" id="motivasi" name="motivasi" value={nilai.motivasi} onChange={handleChangeNilai} /><br />
-
-            <label htmlFor="semangat">Semangat:</label>
-            <input type="text" id="semangat" name="semangat" value={nilai.semangat} onChange={handleChangeNilai} /><br />
-
-            <label htmlFor="kreativ">Kreativitas:</label>
-            <input type="text" id="kreativ" name="kreativ" value={nilai.kreativ} onChange={handleChangeNilai} /><br />
-
-            <label htmlFor="tepatWaktu">Tepat Waktu:</label>
-            <input type="text" id="tepatWaktu" name="tepatWaktu" value={nilai.tepatWaktu} onChange={handleChangeNilai} /><br />
-
-            <label htmlFor="tanggungJawabSeminar">Tanggung Jawab:</label>
-            <input type="text" id="tanggungJawabSeminar" name="tanggungJawabSeminar" value={nilai.tanggungJawabSeminar} onChange={handleChangeNilai} /><br />
-          </form>
-        </div>
-      );
-    }
+  
+  const handleDiujiClick = () => {
+    setActiveButton('seminar');
   };
 
   return (
-    <div className='data-detailkp' style={{ display: 'flex', padding: '100px' }}>
-      <div style={{ flex: 1 }}>
-        {/* Informasi Mahasiswa */}
-        <h2>Informasi Mahasiswa</h2>
-        <ul>
-          {data2.map((mahasiswa) => (
-            <li key={mahasiswa.id}>
-              <strong>Nama:</strong> {mahasiswa.nama}<br />
-              <strong>NIM:</strong> {mahasiswa.NIM}<br />
-              <strong>Status:</strong> {mahasiswa.Status}<br />
-              <strong>Judul:</strong> {mahasiswa.judul}<br />
-              <strong>Hari:</strong> {mahasiswa.hari}<br />
-              <strong>Jam:</strong> {mahasiswa.jam}<br />
-              <strong>Tempat:</strong> {mahasiswa.tempat}<br />
-            </li>
-          ))}
-        </ul>
-      </div>
-      <div style={{ flex: 1 }}>
-        {/* Sisi kanan: Pilihan nilai */}
-        <div>
-          <h2>Pilih Jenis Nilai:</h2>
-          <button onClick={() => handleOptionClick('bimbingan')}>Nilai Bimbingan</button>
-          <button onClick={() => handleOptionClick('seminar')}>Nilai Seminar</button>
+    <>
+      <div style={{ padding: '170px', marginLeft: '300px', width: '100%',height:'100%' }}>
+        <div className='data-detail-mhs'>
+          <div style={{ display: 'flex', alignItems: 'center', margin: '30px 0 0 30px' }}>
+            <FontAwesomeIcon icon={faCircleUser} style={{ margin: '10px 15px 0 0', width: '50px', height: '50px' }} />
+            <div style={{ marginLeft: '10px' }}>
+              <div style={{ fontSize: '35px', color: '#023047', fontWeight: '500' }}>{state.mahasiswa.nama}</div>
+              <div style={{ color: '#219EBC', fontSize: '20px', fontWeight: '500' }}>{state.mahasiswa.NIM}</div>
+            </div>
+          </div>
+
+          <div className='dosen-pem' style={{ margin: '30px 0 0 30px', fontWeight: '600' }}>
+            <div>Pembimbing I</div>
+            <div>{state.mahasiswa.pembimbing1}</div>
+          </div>
+
+          <div className='dosen-pem' style={{ margin: '30px 0 0 30px', fontWeight: '600' }}>
+            <div>Pembimbing 2</div>
+            <div>{state.mahasiswa.pembimbing2}</div>
+          </div>
+
+          <div className='judul-detail' style={{ margin: '30px 0 0 30px', fontWeight: '600', fontSize: '20px' }}>
+            <text style={{ color: '#219EBC' }}>Judul Seminar</text>
+            <div>{state.mahasiswa.judul}</div>
+          </div>
+
+          <div className='hari-detail' style={{ margin: '30px 0 0 30px', fontWeight: '600', fontSize: '20px' }}>
+            <text style={{ color: '#219EBC' }}>Pada</text>
+            <div>{state.mahasiswa.hari}</div>
+          </div>
+
+          <div className='hari-detail' style={{ marginLeft: '30px', display: 'flex', fontSize: '20px', fontWeight: '600' }}>
+            <div>{state.mahasiswa.jam}</div>
+            <div>{state.mahasiswa.tempat}</div>
+          </div>
+
+          <div style={{ margin: '70px 0 0 100px' }}>
+            <div className="mhs-action2">
+              <button
+                className="mhs-select"
+                onClick={handleDibimbingClick}
+                style={{ borderBottom: activeButton === 'bimbingan' ? '4px solid #023047' : '4px solid #219EBC' }}>Nilai Bimbingan</button>
+              <button
+                className="mhs-select"
+                onClick={handleDiujiClick}
+                style={{ borderBottom: activeButton === 'seminar' ? '4px solid #023047' : '4px solid #219EBC' }}>Nilai Seminar</button>
+            </div>
+          </div>
+
+     
+          <div className='nilai-input-KP' style={{ display: 'flex', margin: '30px 0 0 0', justifyContent: 'center' }}>
+            Tanggung Jawab
+            <input style={{ backgroundColor: '#219EBC', marginLeft: '200px' ,width:'50px',color:'#ffff',textAlign:'center'}} placeholder="" />
+          </div>
+
+          
+
+          
+
+          
         </div>
-        {/* Tampilkan formulir nilai sesuai pilihan */}
-        {selectedOption && renderNilaiForm()}
       </div>
-    </div>
+    </>
   );
-};
+}
+
 
 export default DetailKP;
